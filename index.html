@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Cheese Photo | Красноярск</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="logo-wrap">
+        <img
+          src="images/logo.png"
+          alt="Cheese Photo"
+          class="logo-img"
+          onerror="
+            this.style.display = 'none';
+            this.parentElement.classList.add('logo-fallback');
+          "
+        />
+      </div>
+
+      <button class="phone-btn" onclick="copyPhone()">+7 995 075-18-03</button>
+      <div class="phone-hint">Нажмите, чтобы скопировать номер</div>
+
+      <div class="social-grid">
+        <a
+          href="https://t.me/cheese_photo_krsk"
+          class="social-btn"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="images/icon-telegram.png" alt="" class="social-icon" />
+          <span class="social-label">Telegram</span>
+          <span class="social-arrow">›</span>
+        </a>
+
+        <button class="social-btn" onclick="copyMaxPhone()">
+          <img src="images/icon-max.png" alt="" class="social-icon" />
+          <span class="social-label">MAX</span>
+          <span class="social-arrow">›</span>
+        </button>
+
+        <a
+          href="https://vk.ru/cheese_krsk"
+          class="social-btn"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="images/icon-vk.png" alt="" class="social-icon" />
+          <span class="social-label">ВКонтакте</span>
+          <span class="social-arrow">›</span>
+        </a>
+      </div>
+
+      <div class="review-block">
+        <div class="review-title">Поделитесь мнением</div>
+
+        <div class="map-row">
+          <a
+            href="https://yandex.ru/maps/-/CXWp6C2q"
+            class="map-btn"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="images/icon-yandex.png" alt="" class="map-icon" />
+            Яндекс
+          </a>
+          <a
+            href="https://go.2gis.com/fczEO"
+            class="map-btn"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="images/icon-2gis.png" alt="" class="map-icon" />
+            2ГИС
+          </a>
+        </div>
+
+        <div class="review-badge">
+          <span>Скидка −10% за отзыв</span>
+        </div>
+
+        <div class="review-note">
+          Покажите скриншот отзыва сотруднику — скидка ваша
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast">Номер скопирован</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
